@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F38C75426D05D6E00754B2F /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75326D05D6E00754B2F /* cars.json */; };
+		3F38C75526D05D6E00754B2F /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75326D05D6E00754B2F /* cars.json */; };
+		3F38C75626D05D6E00754B2F /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75326D05D6E00754B2F /* cars.json */; };
+		3F38C75826D05DC300754B2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75726D05DC300754B2F /* README.md */; };
+		3F38C75926D05DC300754B2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75726D05DC300754B2F /* README.md */; };
+		3F38C75A26D05DC300754B2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C75726D05DC300754B2F /* README.md */; };
+		3F9B4CE526D047F30014C1CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4CE426D047F30014C1CB /* AppDelegate.swift */; };
+		3F9B4CE726D047F30014C1CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4CE626D047F30014C1CB /* SceneDelegate.swift */; };
+		3F9B4CEB26D047F40014C1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B4CEA26D047F40014C1CB /* Assets.xcassets */; };
+		3F9B4CEE26D047F40014C1CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B4CED26D047F40014C1CB /* Preview Assets.xcassets */; };
+		3F9B4CF126D047F40014C1CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B4CEF26D047F40014C1CB /* LaunchScreen.storyboard */; };
+		3F9B4CFC26D047F50014C1CB /* SixtAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4CFB26D047F50014C1CB /* SixtAppTests.swift */; };
+		3F9B4D0726D047F50014C1CB /* SixtAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D0626D047F50014C1CB /* SixtAppUITests.swift */; };
+		3F9B4D1626D048790014C1CB /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9B4D1526D048790014C1CB /* URLImage */; };
+		3F9B4D1926D0489F0014C1CB /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9B4D1826D0489F0014C1CB /* OHHTTPStubs */; };
+		3F9B4D2326D049340014C1CB /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2226D049340014C1CB /* APIBuilder.swift */; };
+		3F9B4D2426D049340014C1CB /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2226D049340014C1CB /* APIBuilder.swift */; };
+		3F9B4D2526D049340014C1CB /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2226D049340014C1CB /* APIBuilder.swift */; };
+		3F9B4D2826D049690014C1CB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2726D049690014C1CB /* Service.swift */; };
+		3F9B4D2926D049690014C1CB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2726D049690014C1CB /* Service.swift */; };
+		3F9B4D2A26D049690014C1CB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2726D049690014C1CB /* Service.swift */; };
+		3F9B4D2D26D049980014C1CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2C26D049980014C1CB /* APIError.swift */; };
+		3F9B4D2E26D049980014C1CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2C26D049980014C1CB /* APIError.swift */; };
+		3F9B4D2F26D049980014C1CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D2C26D049980014C1CB /* APIError.swift */; };
+		3F9B4D3226D049BB0014C1CB /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3126D049BB0014C1CB /* ResultState.swift */; };
+		3F9B4D3326D049BB0014C1CB /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3126D049BB0014C1CB /* ResultState.swift */; };
+		3F9B4D3426D049BB0014C1CB /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3126D049BB0014C1CB /* ResultState.swift */; };
+		3F9B4D3826D049FD0014C1CB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3726D049FD0014C1CB /* APIService.swift */; };
+		3F9B4D3926D049FD0014C1CB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3726D049FD0014C1CB /* APIService.swift */; };
+		3F9B4D3A26D049FD0014C1CB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3726D049FD0014C1CB /* APIService.swift */; };
+		3F9B4D3C26D04A110014C1CB /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3B26D04A110014C1CB /* CarService.swift */; };
+		3F9B4D3D26D04A110014C1CB /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3B26D04A110014C1CB /* CarService.swift */; };
+		3F9B4D3E26D04A120014C1CB /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D3B26D04A110014C1CB /* CarService.swift */; };
+		3F9B4D4226D04A440014C1CB /* CarEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4126D04A440014C1CB /* CarEndpoint.swift */; };
+		3F9B4D4326D04A440014C1CB /* CarEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4126D04A440014C1CB /* CarEndpoint.swift */; };
+		3F9B4D4426D04A440014C1CB /* CarEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4126D04A440014C1CB /* CarEndpoint.swift */; };
+		3F9B4D4726D04A7F0014C1CB /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4626D04A7F0014C1CB /* CarModel.swift */; };
+		3F9B4D4826D04A7F0014C1CB /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4626D04A7F0014C1CB /* CarModel.swift */; };
+		3F9B4D4926D04A7F0014C1CB /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4626D04A7F0014C1CB /* CarModel.swift */; };
+		3F9B4D4B26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4A26D04AA00014C1CB /* CarModelAPIResponse.swift */; };
+		3F9B4D4C26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4A26D04AA00014C1CB /* CarModelAPIResponse.swift */; };
+		3F9B4D4D26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D4A26D04AA00014C1CB /* CarModelAPIResponse.swift */; };
+		3F9B4D5226D04ADC0014C1CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5126D04ADC0014C1CB /* MapView.swift */; };
+		3F9B4D5326D04ADC0014C1CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5126D04ADC0014C1CB /* MapView.swift */; };
+		3F9B4D5426D04ADC0014C1CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5126D04ADC0014C1CB /* MapView.swift */; };
+		3F9B4D5826D04B0C0014C1CB /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5726D04B0C0014C1CB /* CarsListViewModel.swift */; };
+		3F9B4D5926D04B0C0014C1CB /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5726D04B0C0014C1CB /* CarsListViewModel.swift */; };
+		3F9B4D5A26D04B0C0014C1CB /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5726D04B0C0014C1CB /* CarsListViewModel.swift */; };
+		3F9B4D5D26D04B2E0014C1CB /* CarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5C26D04B2E0014C1CB /* CarsListView.swift */; };
+		3F9B4D5E26D04B2E0014C1CB /* CarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5C26D04B2E0014C1CB /* CarsListView.swift */; };
+		3F9B4D5F26D04B2E0014C1CB /* CarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D5C26D04B2E0014C1CB /* CarsListView.swift */; };
+		3F9B4D6126D04B440014C1CB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6026D04B440014C1CB /* ErrorView.swift */; };
+		3F9B4D6226D04B440014C1CB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6026D04B440014C1CB /* ErrorView.swift */; };
+		3F9B4D6326D04B440014C1CB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6026D04B440014C1CB /* ErrorView.swift */; };
+		3F9B4D6526D04B720014C1CB /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6426D04B720014C1CB /* CarView.swift */; };
+		3F9B4D6626D04B720014C1CB /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6426D04B720014C1CB /* CarView.swift */; };
+		3F9B4D6726D04B720014C1CB /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6426D04B720014C1CB /* CarView.swift */; };
+		3F9B4D6926D0564D0014C1CB /* CarModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6826D0564D0014C1CB /* CarModelTests.swift */; };
+		3F9B4D6B26D058AD0014C1CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6A26D058AD0014C1CB /* Constants.swift */; };
+		3F9B4D6C26D058AD0014C1CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6A26D058AD0014C1CB /* Constants.swift */; };
+		3F9B4D6D26D058AD0014C1CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B4D6A26D058AD0014C1CB /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F9B4CF826D047F50014C1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F9B4CD926D047F30014C1CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9B4CE026D047F30014C1CB;
+			remoteInfo = SixtApp;
+		};
+		3F9B4D0326D047F50014C1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F9B4CD926D047F30014C1CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9B4CE026D047F30014C1CB;
+			remoteInfo = SixtApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F38C75326D05D6E00754B2F /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		3F38C75726D05DC300754B2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F9B4CE126D047F30014C1CB /* SixtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9B4CE426D047F30014C1CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F9B4CE626D047F30014C1CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F9B4CEA26D047F40014C1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F9B4CED26D047F40014C1CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F9B4CF026D047F40014C1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F9B4CF226D047F40014C1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9B4CF726D047F50014C1CB /* SixtAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9B4CFB26D047F50014C1CB /* SixtAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppTests.swift; sourceTree = "<group>"; };
+		3F9B4CFD26D047F50014C1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9B4D0226D047F50014C1CB /* SixtAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9B4D0626D047F50014C1CB /* SixtAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITests.swift; sourceTree = "<group>"; };
+		3F9B4D0826D047F50014C1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9B4D2226D049340014C1CB /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		3F9B4D2726D049690014C1CB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3F9B4D2C26D049980014C1CB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3F9B4D3126D049BB0014C1CB /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		3F9B4D3726D049FD0014C1CB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3F9B4D3B26D04A110014C1CB /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
+		3F9B4D4126D04A440014C1CB /* CarEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEndpoint.swift; sourceTree = "<group>"; };
+		3F9B4D4626D04A7F0014C1CB /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		3F9B4D4A26D04AA00014C1CB /* CarModelAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelAPIResponse.swift; sourceTree = "<group>"; };
+		3F9B4D5126D04ADC0014C1CB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3F9B4D5726D04B0C0014C1CB /* CarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModel.swift; sourceTree = "<group>"; };
+		3F9B4D5C26D04B2E0014C1CB /* CarsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListView.swift; sourceTree = "<group>"; };
+		3F9B4D6026D04B440014C1CB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		3F9B4D6426D04B720014C1CB /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		3F9B4D6826D0564D0014C1CB /* CarModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTests.swift; sourceTree = "<group>"; };
+		3F9B4D6A26D058AD0014C1CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F9B4CDE26D047F30014C1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9B4D1626D048790014C1CB /* URLImage in Frameworks */,
+				3F9B4D1926D0489F0014C1CB /* OHHTTPStubs in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4CF426D047F50014C1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4CFF26D047F50014C1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F38C74E26D05C8100754B2F /* stub */ = {
+			isa = PBXGroup;
+			children = (
+				3F38C75326D05D6E00754B2F /* cars.json */,
+			);
+			path = stub;
+			sourceTree = "<group>";
+		};
+		3F9B4CD826D047F30014C1CB = {
+			isa = PBXGroup;
+			children = (
+				3F38C75726D05DC300754B2F /* README.md */,
+				3F9B4CE326D047F30014C1CB /* SixtApp */,
+				3F9B4CFA26D047F50014C1CB /* SixtAppTests */,
+				3F9B4D0526D047F50014C1CB /* SixtAppUITests */,
+				3F9B4CE226D047F30014C1CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F9B4CE226D047F30014C1CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4CE126D047F30014C1CB /* SixtApp.app */,
+				3F9B4CF726D047F50014C1CB /* SixtAppTests.xctest */,
+				3F9B4D0226D047F50014C1CB /* SixtAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F9B4CE326D047F30014C1CB /* SixtApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D2026D049190014C1CB /* Core */,
+				3F9B4D3526D049D10014C1CB /* Data Layer */,
+				3F9B4D4E26D04ABA0014C1CB /* Scenes */,
+				3F9B4D1A26D048C20014C1CB /* Helper */,
+				3F9B4CE426D047F30014C1CB /* AppDelegate.swift */,
+				3F9B4CE626D047F30014C1CB /* SceneDelegate.swift */,
+				3F9B4CEA26D047F40014C1CB /* Assets.xcassets */,
+				3F9B4CEF26D047F40014C1CB /* LaunchScreen.storyboard */,
+				3F9B4CF226D047F40014C1CB /* Info.plist */,
+				3F9B4CEC26D047F40014C1CB /* Preview Content */,
+			);
+			path = SixtApp;
+			sourceTree = "<group>";
+		};
+		3F9B4CEC26D047F40014C1CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4CED26D047F40014C1CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F9B4CFA26D047F50014C1CB /* SixtAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F38C74E26D05C8100754B2F /* stub */,
+				3F9B4D6826D0564D0014C1CB /* CarModelTests.swift */,
+				3F9B4CFB26D047F50014C1CB /* SixtAppTests.swift */,
+				3F9B4CFD26D047F50014C1CB /* Info.plist */,
+			);
+			path = SixtAppTests;
+			sourceTree = "<group>";
+		};
+		3F9B4D0526D047F50014C1CB /* SixtAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D0626D047F50014C1CB /* SixtAppUITests.swift */,
+				3F9B4D0826D047F50014C1CB /* Info.plist */,
+			);
+			path = SixtAppUITests;
+			sourceTree = "<group>";
+		};
+		3F9B4D1A26D048C20014C1CB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D1B26D048D00014C1CB /* Constant */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3F9B4D1B26D048D00014C1CB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D6A26D058AD0014C1CB /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		3F9B4D2026D049190014C1CB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D2126D049260014C1CB /* AbstractApiBuilder */,
+				3F9B4D2626D049550014C1CB /* AbstractService */,
+				3F9B4D2B26D049880014C1CB /* Errors */,
+				3F9B4D3026D049AE0014C1CB /* State */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3F9B4D2126D049260014C1CB /* AbstractApiBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D2226D049340014C1CB /* APIBuilder.swift */,
+			);
+			path = AbstractApiBuilder;
+			sourceTree = "<group>";
+		};
+		3F9B4D2626D049550014C1CB /* AbstractService */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D2726D049690014C1CB /* Service.swift */,
+			);
+			path = AbstractService;
+			sourceTree = "<group>";
+		};
+		3F9B4D2B26D049880014C1CB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D2C26D049980014C1CB /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		3F9B4D3026D049AE0014C1CB /* State */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D3126D049BB0014C1CB /* ResultState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		3F9B4D3526D049D10014C1CB /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D3626D049F00014C1CB /* Services */,
+				3F9B4D3F26D04A250014C1CB /* Endpoints */,
+				3F9B4D4526D04A6B0014C1CB /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		3F9B4D3626D049F00014C1CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D3726D049FD0014C1CB /* APIService.swift */,
+				3F9B4D3B26D04A110014C1CB /* CarService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3F9B4D3F26D04A250014C1CB /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D4126D04A440014C1CB /* CarEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		3F9B4D4526D04A6B0014C1CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D4626D04A7F0014C1CB /* CarModel.swift */,
+				3F9B4D4A26D04AA00014C1CB /* CarModelAPIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F9B4D4E26D04ABA0014C1CB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5526D04AF10014C1CB /* CarsList */,
+				3F9B4D4F26D04AC40014C1CB /* Map */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F9B4D4F26D04AC40014C1CB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5026D04ACD0014C1CB /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		3F9B4D5026D04ACD0014C1CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5126D04ADC0014C1CB /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F9B4D5526D04AF10014C1CB /* CarsList */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5B26D04B220014C1CB /* Views */,
+				3F9B4D5626D04AFD0014C1CB /* ViewModel */,
+			);
+			path = CarsList;
+			sourceTree = "<group>";
+		};
+		3F9B4D5626D04AFD0014C1CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5726D04B0C0014C1CB /* CarsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9B4D5B26D04B220014C1CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F9B4D5C26D04B2E0014C1CB /* CarsListView.swift */,
+				3F9B4D6026D04B440014C1CB /* ErrorView.swift */,
+				3F9B4D6426D04B720014C1CB /* CarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F9B4CE026D047F30014C1CB /* SixtApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9B4D0B26D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtApp" */;
+			buildPhases = (
+				3F9B4CDD26D047F30014C1CB /* Sources */,
+				3F9B4CDE26D047F30014C1CB /* Frameworks */,
+				3F9B4CDF26D047F30014C1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixtApp;
+			packageProductDependencies = (
+				3F9B4D1526D048790014C1CB /* URLImage */,
+				3F9B4D1826D0489F0014C1CB /* OHHTTPStubs */,
+			);
+			productName = SixtApp;
+			productReference = 3F9B4CE126D047F30014C1CB /* SixtApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F9B4CF626D047F50014C1CB /* SixtAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9B4D0E26D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtAppTests" */;
+			buildPhases = (
+				3F9B4CF326D047F50014C1CB /* Sources */,
+				3F9B4CF426D047F50014C1CB /* Frameworks */,
+				3F9B4CF526D047F50014C1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F9B4CF926D047F50014C1CB /* PBXTargetDependency */,
+			);
+			name = SixtAppTests;
+			productName = SixtAppTests;
+			productReference = 3F9B4CF726D047F50014C1CB /* SixtAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F9B4D0126D047F50014C1CB /* SixtAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9B4D1126D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtAppUITests" */;
+			buildPhases = (
+				3F9B4CFE26D047F50014C1CB /* Sources */,
+				3F9B4CFF26D047F50014C1CB /* Frameworks */,
+				3F9B4D0026D047F50014C1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F9B4D0426D047F50014C1CB /* PBXTargetDependency */,
+			);
+			name = SixtAppUITests;
+			productName = SixtAppUITests;
+			productReference = 3F9B4D0226D047F50014C1CB /* SixtAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F9B4CD926D047F30014C1CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3F9B4CE026D047F30014C1CB = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3F9B4CF626D047F50014C1CB = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3F9B4CE026D047F30014C1CB;
+					};
+					3F9B4D0126D047F50014C1CB = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3F9B4CE026D047F30014C1CB;
+					};
+				};
+			};
+			buildConfigurationList = 3F9B4CDC26D047F30014C1CB /* Build configuration list for PBXProject "SixtApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F9B4CD826D047F30014C1CB;
+			packageReferences = (
+				3F9B4D1426D048790014C1CB /* XCRemoteSwiftPackageReference "url-image" */,
+				3F9B4D1726D0489F0014C1CB /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+			);
+			productRefGroup = 3F9B4CE226D047F30014C1CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F9B4CE026D047F30014C1CB /* SixtApp */,
+				3F9B4CF626D047F50014C1CB /* SixtAppTests */,
+				3F9B4D0126D047F50014C1CB /* SixtAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F9B4CDF26D047F30014C1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9B4CF126D047F40014C1CB /* LaunchScreen.storyboard in Resources */,
+				3F9B4CEE26D047F40014C1CB /* Preview Assets.xcassets in Resources */,
+				3F38C75826D05DC300754B2F /* README.md in Resources */,
+				3F38C75426D05D6E00754B2F /* cars.json in Resources */,
+				3F9B4CEB26D047F40014C1CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4CF526D047F50014C1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F38C75926D05DC300754B2F /* README.md in Resources */,
+				3F38C75526D05D6E00754B2F /* cars.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4D0026D047F50014C1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F38C75A26D05DC300754B2F /* README.md in Resources */,
+				3F38C75626D05D6E00754B2F /* cars.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F9B4CDD26D047F30014C1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9B4CE526D047F30014C1CB /* AppDelegate.swift in Sources */,
+				3F9B4D6B26D058AD0014C1CB /* Constants.swift in Sources */,
+				3F9B4CE726D047F30014C1CB /* SceneDelegate.swift in Sources */,
+				3F9B4D3C26D04A110014C1CB /* CarService.swift in Sources */,
+				3F9B4D6126D04B440014C1CB /* ErrorView.swift in Sources */,
+				3F9B4D2326D049340014C1CB /* APIBuilder.swift in Sources */,
+				3F9B4D5226D04ADC0014C1CB /* MapView.swift in Sources */,
+				3F9B4D3226D049BB0014C1CB /* ResultState.swift in Sources */,
+				3F9B4D4B26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */,
+				3F9B4D4226D04A440014C1CB /* CarEndpoint.swift in Sources */,
+				3F9B4D4726D04A7F0014C1CB /* CarModel.swift in Sources */,
+				3F9B4D2826D049690014C1CB /* Service.swift in Sources */,
+				3F9B4D3826D049FD0014C1CB /* APIService.swift in Sources */,
+				3F9B4D5D26D04B2E0014C1CB /* CarsListView.swift in Sources */,
+				3F9B4D2D26D049980014C1CB /* APIError.swift in Sources */,
+				3F9B4D5826D04B0C0014C1CB /* CarsListViewModel.swift in Sources */,
+				3F9B4D6526D04B720014C1CB /* CarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4CF326D047F50014C1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9B4D4C26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */,
+				3F9B4D6C26D058AD0014C1CB /* Constants.swift in Sources */,
+				3F9B4CFC26D047F50014C1CB /* SixtAppTests.swift in Sources */,
+				3F9B4D3926D049FD0014C1CB /* APIService.swift in Sources */,
+				3F9B4D3D26D04A110014C1CB /* CarService.swift in Sources */,
+				3F9B4D2926D049690014C1CB /* Service.swift in Sources */,
+				3F9B4D3326D049BB0014C1CB /* ResultState.swift in Sources */,
+				3F9B4D4826D04A7F0014C1CB /* CarModel.swift in Sources */,
+				3F9B4D2E26D049980014C1CB /* APIError.swift in Sources */,
+				3F9B4D6926D0564D0014C1CB /* CarModelTests.swift in Sources */,
+				3F9B4D6626D04B720014C1CB /* CarView.swift in Sources */,
+				3F9B4D5926D04B0C0014C1CB /* CarsListViewModel.swift in Sources */,
+				3F9B4D6226D04B440014C1CB /* ErrorView.swift in Sources */,
+				3F9B4D5326D04ADC0014C1CB /* MapView.swift in Sources */,
+				3F9B4D5E26D04B2E0014C1CB /* CarsListView.swift in Sources */,
+				3F9B4D4326D04A440014C1CB /* CarEndpoint.swift in Sources */,
+				3F9B4D2426D049340014C1CB /* APIBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9B4CFE26D047F50014C1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9B4D4D26D04AA00014C1CB /* CarModelAPIResponse.swift in Sources */,
+				3F9B4D0726D047F50014C1CB /* SixtAppUITests.swift in Sources */,
+				3F9B4D3A26D049FD0014C1CB /* APIService.swift in Sources */,
+				3F9B4D3E26D04A120014C1CB /* CarService.swift in Sources */,
+				3F9B4D2A26D049690014C1CB /* Service.swift in Sources */,
+				3F9B4D3426D049BB0014C1CB /* ResultState.swift in Sources */,
+				3F9B4D4926D04A7F0014C1CB /* CarModel.swift in Sources */,
+				3F9B4D6D26D058AD0014C1CB /* Constants.swift in Sources */,
+				3F9B4D2F26D049980014C1CB /* APIError.swift in Sources */,
+				3F9B4D6726D04B720014C1CB /* CarView.swift in Sources */,
+				3F9B4D5A26D04B0C0014C1CB /* CarsListViewModel.swift in Sources */,
+				3F9B4D6326D04B440014C1CB /* ErrorView.swift in Sources */,
+				3F9B4D5426D04ADC0014C1CB /* MapView.swift in Sources */,
+				3F9B4D5F26D04B2E0014C1CB /* CarsListView.swift in Sources */,
+				3F9B4D4426D04A440014C1CB /* CarEndpoint.swift in Sources */,
+				3F9B4D2526D049340014C1CB /* APIBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F9B4CF926D047F50014C1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F9B4CE026D047F30014C1CB /* SixtApp */;
+			targetProxy = 3F9B4CF826D047F50014C1CB /* PBXContainerItemProxy */;
+		};
+		3F9B4D0426D047F50014C1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F9B4CE026D047F30014C1CB /* SixtApp */;
+			targetProxy = 3F9B4D0326D047F50014C1CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F9B4CEF26D047F40014C1CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9B4CF026D047F40014C1CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F9B4D0926D047F50014C1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F9B4D0A26D047F50014C1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F9B4D0C26D047F50014C1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SixtApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SixtApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F9B4D0D26D047F50014C1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SixtApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SixtApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F9B4D0F26D047F50014C1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtApp.app/SixtApp";
+			};
+			name = Debug;
+		};
+		3F9B4D1026D047F50014C1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtApp.app/SixtApp";
+			};
+			name = Release;
+		};
+		3F9B4D1226D047F50014C1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SixtApp;
+			};
+			name = Debug;
+		};
+		3F9B4D1326D047F50014C1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SixtAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SixtApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F9B4CDC26D047F30014C1CB /* Build configuration list for PBXProject "SixtApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9B4D0926D047F50014C1CB /* Debug */,
+				3F9B4D0A26D047F50014C1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9B4D0B26D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9B4D0C26D047F50014C1CB /* Debug */,
+				3F9B4D0D26D047F50014C1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9B4D0E26D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9B4D0F26D047F50014C1CB /* Debug */,
+				3F9B4D1026D047F50014C1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9B4D1126D047F50014C1CB /* Build configuration list for PBXNativeTarget "SixtAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9B4D1226D047F50014C1CB /* Debug */,
+				3F9B4D1326D047F50014C1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F9B4D1426D048790014C1CB /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		3F9B4D1726D0489F0014C1CB /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F9B4D1526D048790014C1CB /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9B4D1426D048790014C1CB /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		3F9B4D1826D0489F0014C1CB /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9B4D1726D0489F0014C1CB /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3F9B4CD926D047F30014C1CB /* Project object */;
+}
